@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body onload="changePlayerSlider()">
+    <div class="board-container">
+        <div class="player">
+            <div class="player-container">
+                <div id="player-slider" class="player-slider"></div>
+                <div id="player-cross" class="player-cross">
+                    Player X
+                </div>
+                <div id="player-circle" class="player-circle">
+                    Player O
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td onclick="draw(0)"></td>
+                <td onclick="draw(1)"></td>
+                <td onclick="draw(2)"></td>
+            </tr>
+            <tr>
+                <td onclick="draw(3)"></td>
+                <td onclick="draw(4)"></td>
+                <td onclick="draw(5)"></td>
+            </tr>
+            <tr>
+                <td onclick="draw(6)"></td>
+                <td onclick="draw(7)"></td>
+                <td onclick="draw(8)"></td>
+            </tr>
+        </table>
+        <button id="restart" class="d-none" onclick="restartGame()">Restart</button>
+    </div>
+</body>
+<script src="script/script.js"></script>
+
+</html>
